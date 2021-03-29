@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainmenuback"
+    tools:context=".MainMenu">
+
+    <TextView
+        android:id="@+id/tgreeting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Good Afternoon Shubhankita,"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.015" />
+
+    <TextView
+        android:id="@+id/tmainquote"
+        android:layout_width="359dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center"
+        android:text="Always believe that something wonderful is about to happen."
+        android:textColor="#412A45"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.111" />
+
+    <ImageView
+        android:id="@+id/mainsettings"
+        android:layout_width="28dp"
+        android:layout_height="29dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.554"
+        app:layout_constraintStart_toEndOf="@+id/tgreeting"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.019"
+        app:srcCompat="@drawable/settings" />
+
+    <ImageView
+        android:id="@+id/mainprofile"
+        android:layout_width="28dp"
+        android:layout_height="29dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.365"
+        app:layout_constraintStart_toEndOf="@+id/mainsettings"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.015"
+        app:srcCompat="@drawable/usercircle" />
+
+    <Button
+        android:id="@+id/bhabits"
+        android:layout_width="203sp"
+        android:layout_height="54sp"
+        android:background="@drawable/mainmenubutton"
+        android:fontFamily="@font/roboto"
+        android:text="Habits"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        app:backgroundTint="#7A6882"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.273" />
+
+    <Button
+        android:id="@+id/bprogress"
+        android:layout_width="203sp"
+        android:layout_height="54sp"
+        android:background="@drawable/mainmenubutton"
+        android:fontFamily="@font/roboto"
+        android:text="Progress"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        app:backgroundTint="#DFA3A5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bstories"
+        app:layout_constraintVertical_bias="0.149" />
+
+    <Button
+        android:id="@+id/bselfeval"
+        android:layout_width="203dp"
+        android:layout_height="54dp"
+        android:background="@drawable/mainmenubutton"
+        android:fontFamily="@font/roboto"
+        android:text="Self Evaluation"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        app:backgroundTint="#FBC1B5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bprogress"
+        app:layout_constraintVertical_bias="0.228" />
+
+    <Button
+        android:id="@+id/bstories"
+        android:layout_width="203sp"
+        android:layout_height="54sp"
+        android:background="@drawable/mainmenubutton"
+        android:fontFamily="@font/roboto"
+        android:text="Stories"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        app:backgroundTint="#C79EB0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btasks"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <Button
+        android:id="@+id/btasks"
+        android:layout_width="203sp"
+        android:layout_height="54sp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/mainmenubutton"
+        android:fontFamily="@font/roboto"
+        android:text="Tasks"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        app:backgroundTint="#A88BA7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bhabits"
+        app:layout_constraintVertical_bias="0.021" />
+
+    <TextView
+        android:id="@+id/tpoints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="150"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.779"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.977" />
+</androidx.constraintlayout.widget.ConstraintLayout>
