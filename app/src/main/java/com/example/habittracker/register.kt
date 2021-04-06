@@ -22,5 +22,6 @@ class register : AppCompatActivity() {
 
             Toast.makeText(this,"Account Created! Please Login", Toast.LENGTH_SHORT).show()
         }
+        
     }
 }
