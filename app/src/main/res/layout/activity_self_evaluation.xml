@@ -49,13 +49,12 @@
     <TextView
         android:id="@+id/textView3"
         android:layout_width="372dp"
-        android:layout_height="493dp"
+        android:layout_height="550dp"
         android:background="@color/purple"
         android:text=""
         app:backgroundTint="#412A45"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -68,10 +67,10 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.735"
+        app:layout_constraintHorizontal_bias="0.616"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.192" />
+        app:layout_constraintVertical_bias="0.202" />
 
     <Button
         android:id="@+id/yes"
@@ -151,50 +150,51 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.201"
+        app:layout_constraintHorizontal_bias="0.233"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.637" />
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="333dp"
-        android:layout_height="50dp"
-        android:background="#FFFFFF"
-        android:hint=""
-        tools:layout_editor_absoluteX="41dp"
-        tools:layout_editor_absoluteY="289dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.573" >
-
-    </com.google.android.material.textfield.TextInputLayout>
+        app:layout_constraintVertical_bias="0.639" />
 
     <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/tfirst"
         android:layout_width="333dp"
         android:layout_height="49dp"
         android:background="#FFFFFF"
+        android:enabled="true"
+        android:hint=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.565" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/tfirst2"
+        android:layout_width="333dp"
+        android:layout_height="108dp"
+        android:background="#FFFFFF"
+        android:enabled="true"
+        android:hint=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.769" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/tdiffernt2"
+        android:layout_width="333dp"
+        android:layout_height="49dp"
+        android:background="#FFFFFF"
+        android:enabled="true"
         android:hint=""
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.425" />
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="334dp"
-        android:layout_height="108dp"
-        android:background="#FFFFFF"
-        android:hint=""
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.786">
-
-    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/evaluate"
@@ -208,6 +208,6 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.909" />
+        app:layout_constraintVertical_bias="0.915" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -105,11 +105,12 @@
         android:id="@+id/textView9"
         android:layout_width="307dp"
         android:layout_height="62dp"
+        android:foregroundGravity="center"
+        android:gravity="start"
         android:text="The secret to building habits - push notifications to keep you on track"
         android:textSize="17sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.653"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.24" />
