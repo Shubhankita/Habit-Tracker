@@ -11,9 +11,22 @@ class Habits : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_habits)
 
+        val mainsettings = findViewById<ImageView>(R.id.mainsettings)
+        mainsettings.setOnClickListener {
+            val intent = Intent(this, Settings::class.java)
+            startActivity(intent)
+        }
+
+
+            val addHabits = findViewById<ImageView>(R.id.addHabits)
+            addHabits.setOnClickListener {
+                val intent = Intent(this, AddHabit::class.java)
+                startActivity(intent)
+            }
 
 
 
+        }
     }
-}
+
 

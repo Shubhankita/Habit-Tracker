@@ -11,24 +11,35 @@ class SelfEvaluation : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_self_evaluation)
 
+        val mainsettings = findViewById<ImageView>(R.id.mainsettings)
+        mainsettings.setOnClickListener {
+            val intent = Intent(this, Settings::class.java)
+            startActivity(intent)
+        }
 
-        val yes: Button = findViewById(R.id.yes)
-        yes.setOnClickListener {
-            Toast.makeText(this,"Saved",Toast.LENGTH_SHORT).show()
 
-            val no: Button = findViewById(R.id.no)
-            no.setOnClickListener {
-                Toast.makeText( this, "Saved", Toast.LENGTH_SHORT).show()
-
-        val evaluateButton: Button = findViewById(R.id.evaluate)
-        evaluateButton.setOnClickListener {
-            Toast.makeText(this,"Evaluation Saved",Toast.LENGTH_SHORT).show()
+            val yes: Button = findViewById(R.id.yes)
+            yes.setOnClickListener {
+                Toast.makeText(this, "Saved", Toast.LENGTH_SHORT).show()
             }
+
+                val no: Button = findViewById(R.id.no)
+                no.setOnClickListener {
+                    Toast.makeText(this, "Saved", Toast.LENGTH_SHORT).show()
                 }
-        }
+
+                    val evaluateButton: Button = findViewById(R.id.evaluate)
+                    evaluateButton.setOnClickListener {
+                        Toast.makeText(this, "Evaluation Saved", Toast.LENGTH_SHORT).show()
+                    }
+
+
+                }
             }
 
-        }
+
+
+
 
 
 
