@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        val tregister = findViewById<TextView>(R.id.tforgotregister)
+        val tregister = findViewById<TextView>(R.id.tforgotsignin)
         tregister.setOnClickListener {
             val intent = Intent (this, register::class.java)
             startActivity(intent)

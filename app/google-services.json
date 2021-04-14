@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "628231340663",
+    "firebase_url": "https://habit-tracker-86cef-default-rtdb.firebaseio.com",
     "project_id": "habit-tracker-86cef",
     "storage_bucket": "habit-tracker-86cef.appspot.com"
   },
@@ -13,6 +14,14 @@
         }
       },
       "oauth_client": [
+        {
+          "client_id": "628231340663-3njr76o7o4bnptse8d7sd2cqp9qe3qu0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.habittracker",
+            "certificate_hash": "cb6b3488ad37bae83459043866f6f0257dd9f9cd"
+          }
+        },
         {
           "client_id": "628231340663-uomt52tju2tlbs77ejqof0era1tvbldi.apps.googleusercontent.com",
           "client_type": 3
