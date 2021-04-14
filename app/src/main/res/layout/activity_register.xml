@@ -54,7 +54,7 @@
         app:layout_constraintVertical_bias="0.977" />
 
     <TextView
-        android:id="@+id/tforgotregister"
+        android:id="@+id/tforgotsignin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
@@ -84,10 +84,10 @@
         app:backgroundTint="#E98C00"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tPassword"
-        app:layout_constraintVertical_bias="0.012" />
+        app:layout_constraintVertical_bias="0.07" />
 
     <TextView
         android:id="@+id/tregisterOR"
@@ -107,7 +107,6 @@
         android:id="@+id/tEmailAddress"
         android:layout_width="310sp"
         android:layout_height="50sp"
-        android:layout_marginTop="3dp"
         android:background="@drawable/inputfield"
         android:ems="10"
         android:hint="Email Address"
@@ -120,34 +119,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/registerName"
-        app:layout_constraintVertical_bias="0.042" />
-
-    <EditText
-        android:id="@+id/registerName"
-        android:layout_width="310sp"
-        android:layout_height="50sp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/inputfield"
-        android:ems="10"
-        android:hint="Name"
-        android:inputType="textEmailAddress"
-        android:textColor="@color/purple"
-        android:textColorHighlight="@color/purple"
-        android:textColorHint="@color/purple"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tregisterOR"
-        app:layout_constraintVertical_bias="0.016" />
+        app:layout_constraintVertical_bias="0.04" />
 
     <EditText
         android:id="@+id/tPassword"
         android:layout_width="310sp"
         android:layout_height="50sp"
-        android:layout_marginTop="17dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/inputfield"
         android:ems="10"
         android:hint="Password"
@@ -161,7 +140,7 @@
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tEmailAddress"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.055" />
 
     <TextView
         android:id="@+id/tregisterCreateAccount"
@@ -190,17 +169,5 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.242"
         app:srcCompat="@drawable/google" />
-
-    <ProgressBar
-        android:id="@+id/progressBar"
-        style="?android:attr/progressBarStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.799" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
