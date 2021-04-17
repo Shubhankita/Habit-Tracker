@@ -23,19 +23,18 @@
         app:layout_constraintVertical_bias="0.081" />
 
     <TextView
-        android:id="@+id/tforgotresetinstruction"
+        android:id="@+id/tgooglesignup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
         android:text="Sign up with Google"
         android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.562"
+        app:layout_constraintHorizontal_bias="0.566"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.216" />
+        app:layout_constraintVertical_bias="0.241" />
 
     <TextView
         android:id="@+id/tforgotaccountalready"
@@ -87,7 +86,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tPassword"
-        app:layout_constraintVertical_bias="0.07" />
+        app:layout_constraintVertical_bias="0.028" />
 
     <TextView
         android:id="@+id/tregisterOR"
@@ -100,8 +99,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tforgotresetinstruction"
-        app:layout_constraintVertical_bias="0.019" />
+        app:layout_constraintTop_toBottomOf="@+id/tgooglesignup"
+        app:layout_constraintVertical_bias="0.037" />
 
     <EditText
         android:id="@+id/tEmailAddress"
@@ -120,13 +119,13 @@
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tregisterOR"
-        app:layout_constraintVertical_bias="0.04" />
+        app:layout_constraintVertical_bias="0.068" />
 
     <EditText
         android:id="@+id/tPassword"
         android:layout_width="310sp"
         android:layout_height="50sp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="17dp"
         android:background="@drawable/inputfield"
         android:ems="10"
         android:hint="Password"
@@ -140,7 +139,7 @@
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tEmailAddress"
-        app:layout_constraintVertical_bias="0.055" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/tregisterCreateAccount"

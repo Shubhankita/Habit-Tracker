@@ -7,6 +7,7 @@
     android:background="@drawable/bb"
     tools:context=".login">
 
+
     <TextView
         android:id="@+id/tforgotpassword"
         android:layout_width="wrap_content"
@@ -24,7 +25,7 @@
         app:layout_constraintVertical_bias="0.157" />
 
     <TextView
-        android:id="@+id/tforgotresetinstruction"
+        android:id="@+id/tgooglesignin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Sign in with Google"
@@ -100,7 +101,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tforgotresetinstruction"
+        app:layout_constraintTop_toBottomOf="@+id/tgooglesignin"
         app:layout_constraintVertical_bias="0.023" />
 
     <EditText
