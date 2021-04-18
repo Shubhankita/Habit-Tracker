@@ -16,12 +16,7 @@ class AddTask : AppCompatActivity() {
             startActivity(intent)
             overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out)
 
-            val mainprofile = findViewById<ImageView>(R.id.mainprofile)
-            mainprofile.setOnClickListener {
-                val intent = Intent (this, Profile::class.java)
-                startActivity(intent)
-                overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out)
-            }
+
         }
     }
 }

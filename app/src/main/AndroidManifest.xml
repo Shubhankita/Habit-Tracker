@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.HabitTracker">
+        <activity android:name=".Profile"></activity>
         <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -28,15 +29,12 @@
         <activity android:name=".Stories" />
         <activity android:name=".Tasks" />
         <activity android:name=".Habits" />
-        <activity android:name=".Profile" />
         <activity android:name=".Settings" />
         <activity android:name=".MainMenu" />
         <activity android:name=".ForgotPassword" />
         <activity android:name=".register" />
         <activity android:name=".login" />
-        <activity android:name=".MainActivity">
-
-        </activity>
+        <activity android:name=".MainActivity"></activity>
 
         <meta-data
             android:name="preloaded_fonts"

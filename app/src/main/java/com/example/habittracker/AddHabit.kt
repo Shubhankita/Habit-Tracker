@@ -16,11 +16,7 @@ class AddHabit : AppCompatActivity() {
             val intent = Intent(this, Settings::class.java)
             startActivity(intent)
 
-            val mainprofile = findViewById<ImageView>(R.id.mainprofile)
-            mainprofile.setOnClickListener {
-                val intent = Intent (this, Profile::class.java)
-                startActivity(intent)
-            }
+
         }
     }
 }

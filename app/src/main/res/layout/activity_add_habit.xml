@@ -19,28 +19,18 @@
         app:layout_constraintVertical_bias="0.022"
         app:srcCompat="@drawable/back" />
 
-    <ImageView
-        android:id="@+id/mainprofile"
-        android:layout_width="28dp"
-        android:layout_height="29dp"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.015"
-        app:srcCompat="@drawable/usercircle" />
 
     <ImageView
         android:id="@+id/mainsettings"
         android:layout_width="32dp"
         android:layout_height="28dp"
-        android:layout_marginEnd="52dp"
+        android:layout_marginEnd="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toEndOf="@+id/tgreeting"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.015"
+        app:layout_constraintVertical_bias="0.017"
         app:srcCompat="@drawable/settings" />
 
     <TextView
