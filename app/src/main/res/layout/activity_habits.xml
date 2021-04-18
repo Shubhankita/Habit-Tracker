@@ -159,7 +159,7 @@
         app:srcCompat="@drawable/workout" />
 
     <ImageButton
-        android:id="@+id/imageButton9"
+        android:id="@+id/sleep"
         android:layout_width="127dp"
         android:layout_height="109dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -171,7 +171,7 @@
         app:srcCompat="@drawable/sleep_routine" />
 
     <ImageButton
-        android:id="@+id/imageButton10"
+        android:id="@+id/screentime"
         android:layout_width="105dp"
         android:layout_height="113dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -183,7 +183,7 @@
         app:srcCompat="@drawable/social_media_detox" />
 
     <ImageButton
-        android:id="@+id/imageButton15"
+        android:id="@+id/meditation"
         android:layout_width="137dp"
         android:layout_height="120dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -195,7 +195,7 @@
         app:srcCompat="@drawable/meditation" />
 
     <ImageButton
-        android:id="@+id/imageButton23"
+        android:id="@+id/study"
         android:layout_width="132dp"
         android:layout_height="111dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -219,7 +219,7 @@
         app:srcCompat="@drawable/gratitude" />
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/stress"
         android:layout_width="135dp"
         android:layout_height="106dp"
         app:layout_constraintBottom_toBottomOf="parent"

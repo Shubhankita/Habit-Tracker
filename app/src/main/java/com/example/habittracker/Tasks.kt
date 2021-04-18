@@ -1,9 +1,12 @@
 package com.example.habittracker
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.CheckBox
+import android.widget.EditText
 import android.widget.ImageView
+import androidx.appcompat.app.AppCompatActivity
+
 
 class Tasks : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,6 +22,15 @@ class Tasks : AppCompatActivity() {
 
 
 
-
+        }
     }
-}
+
+
+
+
+
+
+
+
+
+
