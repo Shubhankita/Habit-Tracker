@@ -1,17 +1,24 @@
 package com.example.habittracker
 import com.google.android.gms.tasks.OnCompleteListener
+import android.content.Context.INPUT_METHOD_SERVICE
 import android.content.Intent
 import android.os.Bundle
 import android.text.TextUtils
+import android.view.inputmethod.InputMethodManager
+import android.widget.ProgressBar
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.google.android.gms.tasks.Task
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
+import com.google.firebase.database.core.Context
+import kotlinx.android.synthetic.main.activity_main.*
 import com.google.firebase.auth.AuthResult
 import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.activity_main.tforgotsignin
 import kotlinx.android.synthetic.main.activity_register.*
-
+import org.w3c.dom.Text
 
 class register : AppCompatActivity() {
 
