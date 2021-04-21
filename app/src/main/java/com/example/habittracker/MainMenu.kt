@@ -5,12 +5,21 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
+import com.google.firebase.auth.FirebaseAuth
+import kotlinx.android.synthetic.main.activity_main_menu.*
+import kotlinx.android.synthetic.main.activity_main_menu.tUsername
+import kotlinx.android.synthetic.main.activity_settings.*
 
 
 class MainMenu : AppCompatActivity() {
+    private lateinit var mAuth: FirebaseAuth
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_menu)
+        mAuth = FirebaseAuth.getInstance()
+        val currentUser = mAuth.currentUser
+
+        tUsername.text = currentUser?.displayName
 
 
         val mainsettings = findViewById<ImageView>(R.id.mainsettings)

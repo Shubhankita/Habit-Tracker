@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.HabitTracker">
-        <activity android:name=".Profile"></activity>
+
         <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,11 +17,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".TaskLayout" />
-        <activity android:name=".NewTask" />
-        <activity android:name=".TaskSplash" />
-        <activity android:name=".MainTask" />
-        <activity android:name=".StartedStatus" />
+
         <activity android:name=".AddTask" />
         <activity android:name=".AddHabit" />
         <activity android:name=".SelfEvaluation" />

@@ -45,7 +45,7 @@
         app:layout_constraintHorizontal_bias="0.555"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.201" />
+        app:layout_constraintVertical_bias="0.218" />
 
     <TextView
         android:id="@+id/textView5"
@@ -59,7 +59,7 @@
         app:layout_constraintHorizontal_bias="0.17"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.209" />
+        app:layout_constraintVertical_bias="0.227" />
 
     <TextView
         android:id="@+id/textView9"
@@ -79,7 +79,7 @@
     <ImageView
         android:id="@+id/editprofile"
         android:layout_width="374dp"
-        android:layout_height="394dp"
+        android:layout_height="350dp"
         android:background="@color/purple"
         android:text=""
         app:backgroundTint="#412A45"
@@ -94,24 +94,28 @@
         android:id="@+id/textView14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:text="Edit Profile"
         android:textColor="@android:color/white"
-        android:textSize="24sp"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.339" />
+        app:layout_constraintTop_toTopOf="@+id/editprofile"
+        app:layout_constraintVertical_bias="0.038" />
 
     <ImageView
         android:id="@+id/mainprofile"
-        android:layout_width="77dp"
-        android:layout_height="51dp"
-        android:layout_marginEnd="160dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="65dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/tUsername"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.411"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14"
         app:srcCompat="@drawable/usercircle" />
 
     <Button
@@ -142,30 +146,62 @@
         app:layout_constraintVertical_bias="0.908" />
 
     <com.google.android.material.textfield.TextInputEditText
-        android:layout_width="205dp"
+        android:id="@+id/tUsername"
+        android:layout_width="305dp"
         android:layout_height="46dp"
-        android:text="Ishu"
+        android:hint="Shubhankita"
+        android:shadowColor="#FFFCFC"
+        android:text="Name"
         android:textColor="@color/white"
+        android:textColorHint="#FFFFFF"
         android:textSize="21sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.548"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499" />
+        app:layout_constraintVertical_bias="0.583" />
 
     <com.google.android.material.textfield.TextInputEditText
-        android:layout_width="205dp"
+        android:id="@+id/tPlace"
+        android:layout_width="305dp"
         android:layout_height="46dp"
-        android:text="Chennai, India"
+        android:hint="Pune, India"
+        android:text="Pune, India"
         android:textColor="@color/white"
+        android:textColorHint="#FFFFFF"
         android:textSize="21sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.548"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.566" />
+        app:layout_constraintVertical_bias="0.651" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="44dp"
+        android:checked="true"
+        android:keepScreenOn="true"
+        android:shadowColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.906"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.225" />
+
+    <Button
+        android:id="@+id/updateinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:textColor="@color/purple"
+        app:backgroundTint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/editprofile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tPlace" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
