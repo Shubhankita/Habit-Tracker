@@ -16,6 +16,7 @@ class SelfEvaluation : AppCompatActivity() {
             val intent = Intent(this, Settings::class.java)
             startActivity(intent)
             overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out)
+            finish()
         }
 
 
@@ -32,6 +33,10 @@ class SelfEvaluation : AppCompatActivity() {
                     val evaluateButton: Button = findViewById(R.id.evaluate)
                     evaluateButton.setOnClickListener {
                         Toast.makeText(this, "Evaluation Saved", Toast.LENGTH_SHORT).show()
+                        val intent = Intent(this, MainMenu::class.java)
+                        startActivity(intent)
+                        overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out)
+                        finish()
                     }
 
 

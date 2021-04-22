@@ -120,6 +120,7 @@ private fun saveHabit() {
     val habitDesc = tdesc.text.toString().trim()
     val mornt = morntime.text.toString().trim()
     val event = eventime.text.toString().trim()
+    val countComplete = 1
 
 
 
@@ -135,7 +136,7 @@ private fun saveHabit() {
     val habit = saveHabitClass(
         habitID,
         habitTitle,
-        habitDesc,month3.isChecked,month6.isChecked,month12.isChecked,mornt,event)
+        habitDesc,month3.isChecked,month6.isChecked,month12.isChecked,mornt,event,true,countComplete)
 
     ref.child(habitID).setValue(habit).addOnCompleteListener {
         Toast.makeText(this, "Habit Added", Toast.LENGTH_SHORT).show()
@@ -143,5 +144,6 @@ private fun saveHabit() {
     val intent = Intent(this, Habits::class.java)
     startActivity(intent)
     overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out)
+    finish()
 }
 }

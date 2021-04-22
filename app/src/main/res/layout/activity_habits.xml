@@ -24,16 +24,15 @@
         android:id="@+id/imageButton4"
         android:layout_width="446dp"
         android:layout_height="44dp"
+        android:background="@color/lightpurple"
         android:backgroundTint="@color/purple"
-        app:srcCompat="@android:drawable/divider_horizontal_bright"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.615"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.249"
-        tools:layout_editor_absoluteX="-16dp"
-        tools:layout_editor_absoluteY="377dp" />
+        app:srcCompat="@android:drawable/divider_horizontal_bright" />
 
 
     <ImageView
@@ -67,34 +66,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:clickable="true"
-        app:backgroundTint="#7A6882"
+        app:backgroundTint="#AF8291"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.921"
+        app:layout_constraintHorizontal_bias="0.954"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.881"
+        app:layout_constraintVertical_bias="0.964"
         app:srcCompat="@android:drawable/ic_input_add"
         app:tint="@android:color/white" />
-
-    <ImageButton
-        android:id="@+id/imageButton3"
-        android:layout_width="437dp"
-        android:layout_height="46dp"
-        android:backgroundTint="@color/purple"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.807"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.551"
-        app:srcCompat="@android:drawable/divider_horizontal_bright" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Started"
+        android:text="My Habits"
         android:textColor="@android:color/white"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -103,20 +89,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.252" />
-
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Other Ideas"
-        android:textColor="@android:color/white"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.032"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.546" />
 
     <TextView
         android:id="@+id/tmainquote"
@@ -135,99 +107,16 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.1" />
 
-    <ImageButton
-        android:id="@+id/imageButton2"
-        android:layout_width="123dp"
-        android:layout_height="132dp"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/userList"
+        android:layout_width="395dp"
+        android:layout_height="506dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.426"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.378"
-        app:srcCompat="@drawable/junk_food" />
-
-    <ImageButton
-        android:id="@+id/imageButton7"
-        android:layout_width="120dp"
-        android:layout_height="132dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.034"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.378"
-        app:srcCompat="@drawable/workout" />
-
-    <ImageButton
-        android:id="@+id/sleep"
-        android:layout_width="127dp"
-        android:layout_height="109dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.559"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.692"
-        app:srcCompat="@drawable/sleep_routine" />
-
-    <ImageButton
-        android:id="@+id/screentime"
-        android:layout_width="105dp"
-        android:layout_height="113dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.98"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.697"
-        app:srcCompat="@drawable/social_media_detox" />
-
-    <ImageButton
-        android:id="@+id/meditation"
-        android:layout_width="137dp"
-        android:layout_height="120dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.036"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.705"
-        app:srcCompat="@drawable/meditation" />
-
-    <ImageButton
-        android:id="@+id/study"
-        android:layout_width="132dp"
-        android:layout_height="111dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.035"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.903"
-        app:srcCompat="@drawable/study" />
-
-    <ImageButton
-        android:id="@+id/imageButton24"
-        android:layout_width="125dp"
-        android:layout_height="132dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.979"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.378"
-        app:srcCompat="@drawable/gratitude" />
-
-    <ImageButton
-        android:id="@+id/stress"
-        android:layout_width="135dp"
-        android:layout_height="106dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.576"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.904"
-        app:srcCompat="@drawable/stress" />
+        app:layout_constraintTop_toBottomOf="@+id/imageButton4"
+        app:layout_constraintVertical_bias="0.034"
+        tools:listitem="@layout/habit_card" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

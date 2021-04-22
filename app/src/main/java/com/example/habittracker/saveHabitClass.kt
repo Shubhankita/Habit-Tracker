@@ -10,4 +10,6 @@ class saveHabitClass (val habitID : String,
                       val dur6month : Boolean,
                       val dur12month : Boolean,
                       val morningTime : String,
-                      val eveningTime : String)
+                      val eveningTime : String,
+                      val complete: Boolean,
+                      val countComplete : Int)

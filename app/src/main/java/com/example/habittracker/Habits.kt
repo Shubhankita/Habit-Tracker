@@ -5,17 +5,28 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
 import androidx.core.content.ContextCompat.startActivity
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import com.google.firebase.database.*
 
 class Habits : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
+    private lateinit var dbref : DatabaseReference
+    private lateinit var userRecyclerview : RecyclerView
+    private lateinit var userArrayList : ArrayList<HabitDB>
+
+    override fun onCreate(savedInstanceState: Bundle?)
+    {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_habits)
+
+
 
         val mainsettings = findViewById<ImageView>(R.id.mainsettings)
         mainsettings.setOnClickListener {
             val intent = Intent(this, Settings::class.java)
             startActivity(intent)
             overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out)
+            finish()
         }
 
 
@@ -24,43 +35,48 @@ class Habits : AppCompatActivity() {
                 val intent = Intent(this, AddHabit::class.java)
                 startActivity(intent)
                 overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out)
+                finish()
             }
 
-        val meditation = findViewById<ImageView>(R.id.meditation)
-        meditation.setOnClickListener {
-            val intent = Intent(this, AddHabit::class.java)
-            startActivity(intent)
-        }
+        userRecyclerview = findViewById(R.id.userList)
+        userRecyclerview.layoutManager = LinearLayoutManager(this)
+        userRecyclerview.setHasFixedSize(true)
 
-        val sleep = findViewById<ImageView>(R.id.sleep)
-        sleep.setOnClickListener {
-            val intent = Intent(this, AddHabit::class.java)
-            startActivity(intent)
-        }
-
-        val screentime = findViewById<ImageView>(R.id.screentime)
-        screentime.setOnClickListener {
-            val intent = Intent(this, AddHabit::class.java)
-            startActivity(intent)
-        }
-
-        val study = findViewById<ImageView>(R.id.study)
-        study.setOnClickListener {
-            val intent = Intent(this, AddHabit::class.java)
-            startActivity(intent)
-        }
-
-        val stress = findViewById<ImageView>(R.id.stress)
-        stress.setOnClickListener {
-            val intent = Intent(this, AddHabit::class.java)
-            startActivity(intent)
-        }
-
-
-
-
+        userArrayList = arrayListOf<HabitDB>()
+        getUserData()
 
         }
+    private fun getUserData() {
+
+        dbref = FirebaseDatabase.getInstance().getReference("Add Habit")
+
+        dbref.addValueEventListener(object : ValueEventListener {
+            override fun onDataChange(snapshot: DataSnapshot) {
+
+                if (snapshot.exists()){
+
+                    for (userSnapshot in snapshot.children){
+
+
+                        val user = userSnapshot.getValue(HabitDB::class.java)
+                        userArrayList.add(user!!)
+
+                    }
+
+                    userRecyclerview.adapter = MyAdapter(userArrayList)
+
+
+                }
+            }
+
+            override fun onCancelled(error: DatabaseError) {
+                TODO("Not yet implemented")
+            }
+
+
+        })
+
+    }
     }
 
 
