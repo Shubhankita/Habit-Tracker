@@ -19,7 +19,13 @@ class Habits : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_habits)
 
-
+        val bHabitDelete = findViewById<ImageView>(R.id.bHabitDelete)
+        bHabitDelete.setOnClickListener {
+            val intent = Intent(this, DeleteHabit::class.java)
+            startActivity(intent)
+            overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out)
+            finish()
+        }
 
         val mainsettings = findViewById<ImageView>(R.id.mainsettings)
         mainsettings.setOnClickListener {

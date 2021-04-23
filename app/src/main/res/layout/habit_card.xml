@@ -44,46 +44,27 @@
             android:textSize="16sp"
             android:textStyle="italic" />
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:orientation="horizontal">
 
 
-        </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:orientation="horizontal">
 
-        </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:orientation="horizontal">
-
-            <TextView
+            <CheckBox
+                android:id="@+id/isDoneCheck"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:fontFamily="@font/roboto"
-                android:foregroundGravity="center"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:foregroundGravity="center_vertical"
+                android:gravity="center"
                 android:text="I completed my habit today?"
                 android:textColor="#FFC107"
-                android:textSize="14sp"
-                android:textStyle="normal|bold" />
-
-            <ImageView
-                android:id="@+id/CompleteButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                app:srcCompat="@drawable/ic_check_white_24dp" />
+                android:textSize="16sp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
 
 
         </LinearLayout>
@@ -92,29 +73,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="left"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="300dp"
-                android:layout_height="match_parent" />
-
-            <ImageView
-                android:id="@+id/bHabitDeltete"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_gravity="left"
-                android:foregroundGravity="left"
-                app:srcCompat="@drawable/ic_delete_white_24dp" />
-
-            <ImageView
-                android:id="@+id/bHabitModify"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_gravity="end"
-                android:layout_marginEnd="4dp"
-                android:foregroundGravity="left"
-                app:srcCompat="@drawable/ic_mode_edit_white_24dp" />
-        </LinearLayout>
+            android:orientation="horizontal"/>
 
     </LinearLayout>
 

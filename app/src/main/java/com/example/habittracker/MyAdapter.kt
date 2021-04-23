@@ -3,10 +3,12 @@ package com.example.habittracker
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
 class MyAdapter(private val userList : ArrayList<HabitDB>) : RecyclerView.Adapter<MyAdapter.MyViewHolder>() {
+
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
@@ -19,10 +21,12 @@ class MyAdapter(private val userList : ArrayList<HabitDB>) : RecyclerView.Adapte
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
 
+
         val currentitem = userList[position]
 
         holder.habitTitle.text = currentitem.habitTitle
         holder.habitDesc.text = currentitem.habitDesc
+
 
     }
 
@@ -36,6 +40,7 @@ class MyAdapter(private val userList : ArrayList<HabitDB>) : RecyclerView.Adapte
 
         val habitTitle : TextView = itemView.findViewById(R.id.RHabitName)
         val habitDesc : TextView = itemView.findViewById(R.id.RHabitDesc)
+
 
     }
 
