@@ -5,6 +5,7 @@ import android.net.Uri
 import android.os.Bundle
 import android.text.Editable
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
@@ -37,7 +38,13 @@ class Settings : AppCompatActivity() {
             Glide.with(this).load(user?.photoUrl).placeholder(R.drawable.usercircle).into(mainprofile)
 
         }
-
+        val back = findViewById<ImageView>(R.id.back)
+        back.setOnClickListener {
+            val intent = Intent(this, MainMenu::class.java)
+            startActivity(intent)
+            overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out)
+            finish()
+        }
 
 
         val update = findViewById<Button>(R.id.updateinfo)

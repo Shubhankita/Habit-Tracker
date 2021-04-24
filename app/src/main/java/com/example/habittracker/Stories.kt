@@ -15,6 +15,14 @@ class Stories : AppCompatActivity() {
             val intent = Intent(this, Settings::class.java)
             startActivity(intent)
             overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out)
+            finish()
+        }
+        val back = findViewById<ImageView>(R.id.back)
+        back.setOnClickListener {
+            val intent = Intent(this, MainMenu::class.java)
+            startActivity(intent)
+            overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out)
+            finish()
         }
 
 
