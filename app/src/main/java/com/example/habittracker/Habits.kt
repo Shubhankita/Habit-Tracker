@@ -26,6 +26,13 @@ class Habits : AppCompatActivity() {
             overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out)
             finish()
         }
+        val back = findViewById<ImageView>(R.id.back)
+        back.setOnClickListener {
+            val intent = Intent(this, MainMenu::class.java)
+            startActivity(intent)
+            overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out)
+            finish()
+        }
 
         val mainsettings = findViewById<ImageView>(R.id.mainsettings)
         mainsettings.setOnClickListener {
@@ -43,6 +50,14 @@ class Habits : AppCompatActivity() {
                 overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out)
                 finish()
             }
+
+        val bhabitModify = findViewById<ImageView>(R.id.bhabitModify)
+        bhabitModify.setOnClickListener {
+            val intent = Intent(this, ModifyHabit::class.java)
+            startActivity(intent)
+            overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out)
+            finish()
+        }
 
         userRecyclerview = findViewById(R.id.userList)
         userRecyclerview.layoutManager = LinearLayoutManager(this)

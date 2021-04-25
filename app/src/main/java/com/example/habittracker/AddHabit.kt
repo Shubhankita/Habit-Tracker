@@ -1,20 +1,15 @@
 package com.example.habittracker
 
 import android.app.TimePickerDialog
-import android.content.Context
 import android.content.Intent
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.*
 import androidx.annotation.RequiresApi
-import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import kotlinx.android.synthetic.main.activity_add_habit.*
 import java.text.SimpleDateFormat
-import java.time.LocalTime
-import java.time.format.DateTimeFormatter
-import java.time.format.FormatStyle
 import java.util.*
 
 class AddHabit : AppCompatActivity() {
@@ -35,12 +30,19 @@ class AddHabit : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_add_habit)
-
+        val back = findViewById<ImageView>(R.id.back)
+        back.setOnClickListener {
+            val intent = Intent(this, Habits::class.java)
+            startActivity(intent)
+            overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out)
+            finish()
+        }
 
         val mainsettings = findViewById<ImageView>(R.id.mainsettings)
         mainsettings.setOnClickListener {
             val intent = Intent(this, Settings::class.java)
             startActivity(intent)
+            finish()
 
         }
         morntime.setOnClickListener {
@@ -132,13 +134,12 @@ private fun saveHabit() {
 
 
     val ref = FirebaseDatabase.getInstance().getReference("Add Habit")
-    val habitID = ref!!.push().key!!
-    val habit = saveHabitClass(
-        habitID,
-        habitTitle,
-        habitDesc,month3.isChecked,month6.isChecked,month12.isChecked,mornt,event,true,countComplete)
 
-    ref.child(habitID).setValue(habit).addOnCompleteListener {
+    val habit = saveHabitClass(
+        habitTitle,
+        habitDesc,month3.isChecked,month6.isChecked,month12.isChecked,mornt,event,false,countComplete)
+
+    ref.child(habitTitle).setValue(habit).addOnCompleteListener {
         Toast.makeText(this, "Habit Added", Toast.LENGTH_SHORT).show()
     }
     val intent = Intent(this, Habits::class.java)
