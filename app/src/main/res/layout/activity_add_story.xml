@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/mainmenuback"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddStory">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.068"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.022"
+            app:srcCompat="@drawable/back" />
+
+
+        <ImageView
+            android:id="@+id/mainsettings"
+            android:layout_width="32dp"
+            android:layout_height="28dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toEndOf="@+id/tgreeting"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.017"
+            app:srcCompat="@drawable/settings" />
+
+        <TextView
+            android:id="@+id/tTasks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Story"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.011" />
+
+    <Button
+        android:id="@+id/BstoryUpload"
+        android:layout_width="128dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="5dp"
+        android:text="Upload Story"
+        android:textColor="@android:color/white"
+        app:backgroundTint="#412A45"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.157" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="355dp"
+        android:layout_height="444dp"
+        android:background="@color/purple"
+        android:text=""
+        app:backgroundTint="@color/purple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.407" />
+
+    <TextView
+        android:id="@+id/addname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="80dp"
+        android:text="Username:"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.158"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.02" />
+
+    <TextView
+        android:id="@+id/addtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="80dp"
+        android:text="Add Title:"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.153"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.219" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/tstorytitle"
+        android:layout_width="327dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="5dp"
+        android:background="#FFFFFF"
+        android:enabled="true"
+        android:hint=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addtitle"
+        app:layout_constraintVertical_bias="0.012" />
+
+    <TextView
+        android:id="@+id/adddesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="404dp"
+        android:text="Story Description:"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.197"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ttitle"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/tstorydesc"
+        android:layout_width="325dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="5dp"
+        android:background="#FFFFFF"
+        android:enabled="true"
+        android:hint=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tstorytitle"
+        app:layout_constraintVertical_bias="0.166" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/tUsernameStory"
+        android:layout_width="327dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="5dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addname"
+        app:layout_constraintVertical_bias="0.013" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

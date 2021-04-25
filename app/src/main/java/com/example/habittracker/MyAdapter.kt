@@ -45,3 +45,4 @@ class MyAdapter(private val userList : ArrayList<HabitDB>) : RecyclerView.Adapte
     }
 
 }
+
