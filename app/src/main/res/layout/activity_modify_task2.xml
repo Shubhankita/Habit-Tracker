@@ -4,9 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/mainmenuback"
-    tools:context=".AddTask">
-
+    tools:context=".ModifyTask"
+    android:background="@drawable/mainmenuback">
     <ImageView
         android:id="@+id/back"
         android:layout_width="wrap_content"
@@ -27,7 +26,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:gravity="center"
-        android:text="Success is no accident. It is hard work, perseverance, learning, sacrifice and most of all, love of what you are doing."
+        android:text="Don't let yesterday take too much of today!"
         android:textColor="@android:color/darker_gray"
         android:textSize="23sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -54,7 +53,7 @@
         android:id="@+id/tTasks"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Add Task"
+        android:text="Modify Task"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -65,7 +64,7 @@
         app:layout_constraintVertical_bias="0.011" />
 
     <Button
-        android:id="@+id/addTaskSubmit"
+        android:id="@+id/ModifyTaskSubmit"
         android:layout_width="143dp"
         android:layout_height="61dp"
         android:layout_marginTop="15dp"
@@ -79,19 +78,20 @@
         app:layout_constraintTop_toBottomOf="@+id/textView3"
         app:layout_constraintVertical_bias="0.0" />
 
+
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="356dp"
+        android:layout_width="350dp"
         android:layout_height="366dp"
         android:background="@color/purple"
         android:text=""
         app:backgroundTint="@color/purple"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tmainquote"
-        app:layout_constraintVertical_bias="0.136" />
+        app:layout_constraintVertical_bias="0.137" />
 
     <TextView
         android:id="@+id/addtitle"
@@ -99,18 +99,18 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="80dp"
-        android:text="Add Title:"
+        android:text="Title:"
         android:textColor="@android:color/white"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.134"
+        app:layout_constraintHorizontal_bias="0.147"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textView3"
-        app:layout_constraintVertical_bias="0.007" />
+        app:layout_constraintVertical_bias="0.024" />
 
     <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/tTasktitle"
+        android:id="@+id/tModifyTasktitle"
         android:layout_width="327dp"
         android:layout_height="52dp"
         android:layout_marginStart="15dp"
@@ -135,19 +135,19 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.17"
+        app:layout_constraintHorizontal_bias="0.205"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tTasktitle"
-        app:layout_constraintVertical_bias="0.012" />
+        app:layout_constraintTop_toBottomOf="@+id/tModifyTasktitle"
+        app:layout_constraintVertical_bias="0.019" />
 
     <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/tTaskdesc"
+        android:id="@+id/tModifyTaskdesc"
         android:layout_width="327dp"
         android:layout_height="104dp"
         android:layout_marginStart="15dp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="15dp"
-        android:layout_marginBottom="228dp"
+        android:layout_marginBottom="244dp"
         android:background="#FFFFFF"
         android:enabled="true"
         android:hint=""
@@ -163,22 +163,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:layout_marginBottom="52dp"
         android:text="Reminder  Details:"
         android:textColor="@android:color/white"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/textView3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.181"
+        app:layout_constraintHorizontal_bias="0.216"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tTaskdesc"
+        app:layout_constraintTop_toBottomOf="@+id/tModifyTaskdesc"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/evngrem2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="10dp"
         android:text="Time:"
         android:textColor="@android:color/white"
         android:textSize="20sp"
@@ -190,7 +189,7 @@
         app:layout_constraintVertical_bias="0.285" />
 
     <Button
-        android:id="@+id/tasktime"
+        android:id="@+id/Modifytasktime"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
         android:layout_marginEnd="124dp"
@@ -201,10 +200,9 @@
         app:backgroundTint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="@+id/textView3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.869"
         app:layout_constraintStart_toEndOf="@+id/evngrem2"
         app:layout_constraintTop_toBottomOf="@+id/evngrem"
-        app:layout_constraintVertical_bias="0.705" />
-
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

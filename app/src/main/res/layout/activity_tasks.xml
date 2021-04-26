@@ -64,305 +64,84 @@
         app:layout_constraintVertical_bias="0.084" />
 
 
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="446dp"
+        android:layout_height="44dp"
+        android:background="@color/lightpurple"
+        android:backgroundTint="@color/purple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.196"
+        app:srcCompat="@android:drawable/divider_horizontal_bright" />
+
     <TextView
-        android:id="@+id/textView3"
-        android:layout_width="351dp"
-        android:layout_height="548dp"
-        android:background="@color/purple"
-        android:text=""
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.466"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.584" />
-
-    <CheckBox
-        android:id="@+id/todoCheckBox"
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:buttonTint="@color/white"
-        android:paddingStart="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="20dp"
+        android:text="Today's Tasks"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.112"
+        app:layout_constraintHorizontal_bias="0.006"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.21"
-        tools:text="" />
+        app:layout_constraintTop_toTopOf="@+id/imageButton4" />
 
-    <CheckBox
-        android:id="@+id/todoCheckBox2"
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addTask"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:buttonTint="@color/white"
-        android:paddingStart="8dp"
+        android:clickable="true"
+        app:backgroundTint="#AF8291"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.112"
+        app:layout_constraintHorizontal_bias="0.954"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.351"
-        tools:text="" />
+        app:layout_constraintVertical_bias="0.989"
+        app:srcCompat="@android:drawable/ic_input_add"
+        app:tint="@android:color/white" />
 
-    <CheckBox
-        android:id="@+id/todoCheckBox3"
+    <ImageView
+        android:id="@+id/bTasksModify"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:buttonTint="@color/white"
-        android:paddingStart="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.112"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.281"
-        tools:text="" />
+        android:layout_marginStart="192dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton4"
+        app:layout_constraintEnd_toStartOf="@+id/bHabitDelete"
+        app:layout_constraintHorizontal_bias="0.937"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/imageButton4"
+        app:layout_constraintVertical_bias="0.6"
+        app:srcCompat="@drawable/ic_mode_edit_white_24dp" />
 
-    <CheckBox
-        android:id="@+id/todoCheckBox4"
+    <ImageView
+        android:id="@+id/bTasksDelete"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:buttonTint="@color/white"
-        android:paddingStart="8dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/bTasksModify"
+        app:layout_constraintTop_toTopOf="@+id/imageButton4"
+        app:layout_constraintVertical_bias="0.6"
+        app:srcCompat="@drawable/ic_delete_white_24dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/userlist2"
+        android:layout_width="398dp"
+        android:layout_height="466dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.112"
+        app:layout_constraintHorizontal_bias="0.461"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.491"
-        tools:text="" />
-
-    <CheckBox
-        android:id="@+id/todoCheckBox5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:buttonTint="@color/white"
-        android:paddingStart="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.112"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.421"
-        tools:text="" />
-
-    <CheckBox
-        android:id="@+id/todoCheckBox6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:buttonTint="@color/white"
-        android:paddingStart="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.112"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.773"
-        tools:text="" />
-
-    <CheckBox
-        android:id="@+id/todoCheckBox7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:buttonTint="@color/white"
-        android:paddingStart="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.112"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.702"
-        tools:text="" />
-
-    <CheckBox
-        android:id="@+id/todoCheckBox8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:buttonTint="@color/white"
-        android:paddingStart="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.112"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.632"
-        tools:text="" />
-
-    <CheckBox
-        android:id="@+id/todoCheckBox9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:buttonTint="@color/white"
-        android:paddingStart="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.112"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.562"
-        tools:text="" />
-
-    <CheckBox
-        android:id="@+id/todoCheckBox10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:buttonTint="@color/white"
-        android:paddingStart="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.112"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.843"
-        tools:text="" />
-
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/input1"
-        android:layout_width="290dp"
-        android:layout_height="48dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.735"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.21"
-        tools:text="" />
-
-    <com.google.android.material.textfield.TextInputEditText
-        android:layout_width="290dp"
-        android:layout_height="48dp"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.735"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.281"
-        tools:text="" />
-
-    <com.google.android.material.textfield.TextInputEditText
-        android:layout_width="290dp"
-        android:layout_height="48dp"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.735"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.351"
-        tools:text="" />
-
-    <com.google.android.material.textfield.TextInputEditText
-        android:layout_width="290dp"
-        android:layout_height="48dp"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.735"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.843"
-        tools:text="" />
-
-    <com.google.android.material.textfield.TextInputEditText
-        android:layout_width="290dp"
-        android:layout_height="48dp"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.735"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.773"
-        tools:text="" />
-
-    <com.google.android.material.textfield.TextInputEditText
-        android:layout_width="290dp"
-        android:layout_height="48dp"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.735"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.702"
-        tools:text="" />
-
-    <com.google.android.material.textfield.TextInputEditText
-        android:layout_width="290dp"
-        android:layout_height="48dp"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.735"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.632"
-        tools:text="" />
-
-    <com.google.android.material.textfield.TextInputEditText
-        android:layout_width="290dp"
-        android:layout_height="48dp"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.735"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.562"
-        tools:text="" />
-
-    <com.google.android.material.textfield.TextInputEditText
-        android:layout_width="290dp"
-        android:layout_height="48dp"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.735"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.491"
-        tools:text="" />
-
-    <com.google.android.material.textfield.TextInputEditText
-        android:layout_width="290dp"
-        android:layout_height="48dp"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.735"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.421"
-        tools:text="" />
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="401dp"
-        android:layout_height="17dp"
-        tools:layout_editor_absoluteX="4dp"
-        tools:layout_editor_absoluteY="658dp"/>
-
-
+        app:layout_constraintVertical_bias="0.72"
+        tools:listitem="@layout/task_card"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
