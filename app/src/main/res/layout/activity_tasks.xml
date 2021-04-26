@@ -135,13 +135,14 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/userlist2"
-        android:layout_width="398dp"
-        android:layout_height="466dp"
+        android:layout_width="414dp"
+        android:layout_height="532dp"
+        android:layout_marginTop="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.72"
-        tools:listitem="@layout/task_card"/>
+        app:layout_constraintTop_toBottomOf="@+id/imageButton4"
+        app:layout_constraintVertical_bias="0.0"
+        tools:listitem="@layout/task_card" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -66,43 +66,42 @@
         android:id="@+id/taddStory"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:gravity="center"
         android:text="Tap to add your stories here"
         android:textColor="#412A45"
         android:textSize="21sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.781"
+        app:layout_constraintHorizontal_bias="0.183"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.221" />
-
-
+        app:layout_constraintTop_toBottomOf="@+id/tmainquote" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/storyUserList"
-        android:layout_width="395dp"
-        android:layout_height="506dp"
-        android:layout_marginBottom="60dp"
+        android:layout_width="381dp"
+        android:layout_height="531dp"
+        android:layout_marginTop="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton4"
-        app:layout_constraintVertical_bias="0.034"
+        app:layout_constraintTop_toBottomOf="@+id/taddStory"
+        app:layout_constraintVertical_bias="0.0"
         tools:listitem="@layout/story_card" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/addStories"
+        android:id="@+id/addStory"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
         android:clickable="true"
         app:backgroundTint="#7A6882"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/storyUserList"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.045"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.213"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toEndOf="@+id/taddStory"
+        app:layout_constraintTop_toBottomOf="@+id/tmainquote"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@android:drawable/ic_input_add"
         app:tint="@android:color/white" />
 

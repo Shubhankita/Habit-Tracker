@@ -91,51 +91,38 @@
         app:layout_constraintVertical_bias="0.084" />
 
     <Button
-        android:id="@+id/weeklyreport"
-        android:layout_width="167dp"
-        android:layout_height="48dp"
-        android:text="Weekly Report"
+        android:id="@+id/report"
+        android:layout_width="176dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="10dp"
+        android:text="Report"
         android:textColor="@android:color/white"
         android:textSize="15sp"
         app:backgroundTint="#7A6882"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/generatereport"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/generatereport"
+        android:layout_width="wrap_content"
+        android:layout_height="47dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center"
+        android:text="Generate Report:"
+        android:textColor="@color/purple"
+        android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.081"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.897" />
-
-    <Button
-        android:id="@+id/monthlyreport"
-        android:layout_width="180dp"
-        android:layout_height="48dp"
-        android:text="Monthly Report"
-        android:textColor="@android:color/white"
-        android:textSize="15sp"
-        app:backgroundTint="#7A6882"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.93"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.897" />
-
-    <TextView
-        android:id="@+id/generatereport"
-        android:layout_width="175dp"
-        android:layout_height="47dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:gravity="center"
-        android:text="Generate Reports"
-        android:textColor="@android:color/darker_gray"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.827" />
+        app:layout_constraintTop_toBottomOf="@+id/textView15"
+        app:layout_constraintVertical_bias="0.075" />
 
     <TextView
         android:id="@+id/textView3"

@@ -17,5 +17,15 @@ class Progress : AppCompatActivity() {
             overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out)
             finish()
         }
+       
+        val mainsettings = findViewById<ImageView>(R.id.mainsettings)
+        mainsettings.setOnClickListener {
+            val intent = Intent(this, Settings::class.java)
+            startActivity(intent)
+            overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out)
+            finish()
+
+
+        }
     }
 }
