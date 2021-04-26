@@ -30,6 +30,7 @@ class AddHabit : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_add_habit)
+
         val back = findViewById<ImageView>(R.id.back)
         back.setOnClickListener {
             val intent = Intent(this, Habits::class.java)
