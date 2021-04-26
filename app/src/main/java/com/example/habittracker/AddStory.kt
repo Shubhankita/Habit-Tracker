@@ -25,8 +25,12 @@ class AddStory : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_add_story)
 
+        tstorytitle = findViewById(R.id.tstorytitle)
+        tstorydesc = findViewById(R.id.tstorydesc)
+        tUsernameStory=findViewById(R.id.tUsernameStory)
+        BstoryUpload = findViewById(R.id.BstoryUpload)
 
-    val mainsettings = findViewById<ImageView>(R.id.mainsettings)
+        val mainsettings = findViewById<ImageView>(R.id.mainsettings)
     mainsettings.setOnClickListener {
         val intent = Intent(this, Settings::class.java)
         startActivity(intent)
@@ -34,12 +38,6 @@ class AddStory : AppCompatActivity() {
     }
 
         //Firebase Database
-
-
-        tstorytitle = findViewById(R.id.tstorytitle)
-        tstorydesc = findViewById(R.id.tstorydesc)
-        tUsernameStory=findViewById(R.id.tUsernameStory)
-        BstoryUpload = findViewById(R.id.BstoryUpload)
 
         BstoryUpload.setOnClickListener {
             saveStory()
@@ -65,6 +63,7 @@ class AddStory : AppCompatActivity() {
 
 
         val ref = FirebaseDatabase.getInstance().getReference("Add Story")
+
         val storyID = ref!!.push().key!!
         val story = saveStoryClass(
             storyID,
