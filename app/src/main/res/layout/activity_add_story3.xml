@@ -6,6 +6,24 @@
     android:layout_height="match_parent"
     android:background="@drawable/tabback"
     tools:context=".AddStory2">
+
+    <TextView
+        android:id="@+id/tmainquote"
+        android:layout_width="356dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center"
+        android:text="It's hard to beat a person who never gives up"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.104" />
+
     <ImageView
         android:id="@+id/back"
         android:layout_width="wrap_content"
@@ -48,8 +66,8 @@
 
     <Button
         android:id="@+id/BstoryUpload"
-        android:layout_width="128dp"
-        android:layout_height="59dp"
+        android:layout_width="163dp"
+        android:layout_height="50dp"
         android:layout_marginTop="5dp"
         android:text="Upload Story"
         android:textColor="@android:color/white"
@@ -70,9 +88,10 @@
         app:backgroundTint="@color/purple"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.407" />
+        app:layout_constraintTop_toBottomOf="@+id/tmainquote"
+        app:layout_constraintVertical_bias="0.192" />
 
     <TextView
         android:id="@+id/addname"
