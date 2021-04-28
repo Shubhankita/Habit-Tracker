@@ -10,7 +10,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.HabitTracker">
-        <activity android:name=".AddStory2"></activity>
+        <activity android:name=".report"></activity>
+        <activity android:name=".AddStory2" />
         <activity android:name=".ModifyTask" />
         <activity android:name=".DeleteTask" />
         <activity android:name=".ModifyHabit" />
