@@ -175,7 +175,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
-        android:text="Week :  03-05-2021 to 09-05-2021"
+        android:text="Week :  10-05-2021 to 16-05-2021"
         android:textColor="#412A45"
         android:textSize="20sp"
         android:textStyle="bold"
